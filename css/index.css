@@ -1,0 +1,51 @@
+:root{
+    /* Colors */
+    /* Primary */
+
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+
+    /* Neutral */
+
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+}
+
+*{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.facebook{
+    background: url(../assets/images/icon-facebook.svg);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.twitter{
+    background: url(../assets/images/icon-twitter.svg);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* .hidden{
+    opacity: 0;
+    visibility: hidden;
+} */
+

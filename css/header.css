@@ -1,0 +1,78 @@
+@import "./index.css";
+
+header{
+    width: 80%;
+    height: 80px;
+    display: flex;
+}
+
+header .logo{
+    z-index: 200;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+header span{
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
+    z-index: 200;
+}
+
+.header__nav{
+    position: fixed;
+    background-color:hsla(229, 31%, 21%, 0.980);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15vh;
+}
+
+nav ul a{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    border-top: 1px solid  hsl(231, 4%, 37%);
+}
+
+nav ul a:nth-child(3){
+    border-bottom: 1px solid hsl(231, 4%, 37%);
+}
+
+nav ul a:last-child{
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.nav__social{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__social a{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
