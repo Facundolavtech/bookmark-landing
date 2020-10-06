@@ -1,0 +1,69 @@
+@import "./index.css";
+
+.features__section{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.features__section h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 20px;
+}
+
+.features__section p{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.features__controls{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.features__controls button{
+    width: 60%;
+    padding-bottom: 20px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+    color: var(--GrayishBlue);
+    border: 4px solid transparent;
+}
+
+.features__controls .active{
+    border-bottom: 4px solid var(--SoftRed);
+    color: #000;
+}
+
+.features__controls hr{
+    width: 100%;
+    border: 1px solid rgb(233, 230, 230);
+}
+
+.feature{
+    width: 90%;
+    margin: 60px auto 0 auto;
+}
+
+.feature img{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.feature h3{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 20px;
+}
+
+.feature p{
+    font-size: .8em;
+}

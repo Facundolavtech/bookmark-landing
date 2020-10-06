@@ -1,0 +1,72 @@
+@import "./index.css";
+
+.hero__section{
+    width: 100%;
+    margin: 50px 0 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero__section img{
+    width: 90%;
+    position: relative;
+    z-index: 100;
+}
+
+.hero__img-bg{
+    position: absolute;
+    width: 80%;
+    height: 180px;
+    right: 0;
+    transform: translateY(8vh);
+    border-radius: 0px 0 0 40%;
+    background-color: var(--SoftBlue);
+}
+
+.principal-info__section{
+    width: 90%;
+    text-align: center;
+    margin: 70px auto;
+}
+
+.principal-info__section h1{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--VeryDarkBlue);
+}
+
+.principal-info__section p{
+    margin-bottom: 40px;
+}
+
+.btn__getIt__container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn__getIt__container a{
+    display: block;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.btn__getIt__container a:nth-child(1){
+    background-color: var(--SoftBlue);
+    color: #fff;
+}
+
+.btn__getIt__container a:nth-child(2){
+    background-color: #fff;
+    color:  hsl(228, 2%, 46%);
+    font-weight: 500;
+}

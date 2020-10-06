@@ -1,0 +1,64 @@
+@import "./index.css";
+
+.contact__section{
+    width: 100%;
+    margin: auto;
+    padding: 60px 0;
+    background-color: var(--SoftBlue);
+}
+
+.contact__section__container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__section__container span{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+.contact__section__container h2{
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.contact__section__container form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.contact__section__container form input:nth-child(1){
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: .9em;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.contact__section__container form input:nth-child(1)::placeholder{
+    color: hsl(240, 6%, 80%);
+}
+
+.contact__section__container form input:nth-child(2){
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: .8em;
+    background-color: var(--SoftRed);
+    color: #fff;
+    font-weight: 500;
+}

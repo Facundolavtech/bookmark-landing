@@ -1,0 +1,58 @@
+@import "./index.css";
+
+.faq__section{
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.faq__section h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 20px;
+}
+
+.faq__section p{
+    font-size: .8em;
+    margin-bottom: 60px;
+}
+
+.question{
+    padding: 20px 0 25px 0;
+    text-align: initial;
+    border-bottom: 1px solid rgb(233, 230, 230);
+    position: relative;
+}
+
+.question h3{
+    font-weight: 400;
+    font-size: .8em;
+    color: var(--VeryDarkBlue);
+}
+
+.arrow__hidden{
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+    right: 0;
+    bottom: 30%;
+    background: url(../assets/images/icon-arrow.svg);
+    background-repeat: no-repeat;
+}
+
+.question__btn-moreinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    width: 120px;
+    background-color: var(--SoftBlue);
+    text-decoration: none;
+    color: #fff;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}

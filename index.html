@@ -7,12 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/features.css">
+    <link rel="stylesheet" href="./css/download-cards.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
 
     <header>
         <a href="./" class="logo">
-            <img src="./assets/images/logo-bookmarkwhite.svg" alt="">
+            <img src="./assets/images/logo-bookmark.svg" alt="">
         </a>
 
         <nav class="header__nav hidden">
@@ -30,14 +36,12 @@
         </nav>
 
 
-        <span class="btnMenu"><img src="./assets/images/icon-close.svg" alt=""></span>
+        <span class="btnMenu"><img src="./assets/images/icon-hamburger.svg" alt=""></span>
     </header>
 
     <main>
         <section class="hero__section">
-            <div class="hero__img">
-                <img src="./assets/images/illustration-hero.svg" alt="">
-            </div>
+            <img src="./assets/images/illustration-hero.svg" alt="">   
 
             <div class="hero__img-bg"></div>
         </section>
@@ -58,9 +62,13 @@
             <p>Our aim to make it quick and easy for you to access your favourite websites. Your bookmars sync between your devices so you can access them on the go.</p>
 
             <div class="features__controls">
-                <button>Simple Bookmarking</button>
+                <hr>
+                <button class="active">Simple Bookmarking</button>
+                <hr>
                 <button>Speedy Searching</button>
+                <hr>
                 <button>Easy Sharing</button>
+                <hr>
             </div>
 
             <div class="feature">
@@ -85,18 +93,21 @@
                     <img src="./assets/images/logo-chrome.svg" alt="">
                     <h3>Add to Chrome</h3>
                     <p>Minimum version 6.2</p>
+                    <img src="./assets/images/bg-dots.svg" alt="">
                     <a href="#">Add & Install Extension</a>
                 </div>
                 <div class="card">
                     <img src="./assets/images/logo-firefox.svg" alt="">
                     <h3>Add to Firefox</h3>
                     <p>Minimum version 5.5</p>
+                    <img src="./assets/images/bg-dots.svg" alt="">
                     <a href="#">Add & Install Extension</a>
                 </div>
                 <div class="card">
                     <img src="./assets/images/logo-opera.svg" alt="">
                     <h3>Add to Opera</h3>
                     <p>Minimum version 4.6</p>
+                    <img src="./assets/images/bg-dots.svg" alt="">
                     <a href="#">Add & Install Extension</a>
                 </div>
             </div>
@@ -123,24 +134,26 @@
                 <div class="arrow__hidden"></div>
             </div>
 
-            <a href="#">More Info</a>
+            <a href="#" class="question__btn-moreinfo">More Info</a>
         </section>
 
         <section class="contact__section">
-            <span>35.000+ ALREADY JOINED</span>
-            <h2>Stay up-to-date with what we're doing</h2>
+            <div class="contact__section__container">
+                <span>35.000+ ALREADY JOINED</span>
+                <h2>Stay up-to-date with what we're doing</h2>
 
-            <form>
-                <input type="email" placeholder="Enter your email address">
-                <input type="submit" value="Contact Us">
-            </form>
+                <form>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <input type="submit" value="Contact Us">
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer__container">
             <a href="" class="footer__logo">
-                <img src="./assets/images/logo-bookmark.svg" alt="">
+                <img src="./assets/images/logo-bookmarkfooter.svg" alt="">
             </a>
             <div class="footer__links">
                 <a href="#">FEATURES</a>

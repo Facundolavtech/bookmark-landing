@@ -44,8 +44,11 @@ body{
 }
 
 
-/* .hidden{
+.hidden{
     opacity: 0;
     visibility: hidden;
-} */
+}
 
+p{
+    color: var(--GrayishBlue);
+}
