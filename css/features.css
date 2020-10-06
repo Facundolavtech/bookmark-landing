@@ -27,18 +27,25 @@
 
 .features__controls button{
     width: 60%;
-    padding-bottom: 20px;
     border: none;
+    padding-bottom: 20px;
     outline: none;
     background-color: #fff;
     margin: 20px auto 0 auto;
-    color: var(--GrayishBlue);
     border: 4px solid transparent;
 }
 
-.features__controls .active{
+
+.features__controls .controlActive{
     border-bottom: 4px solid var(--SoftRed);
     color: #000;
+    transition: all .3s;
+}
+
+.features__controls .controlUnactive{
+    color: var(--GrayishBlue);
+    border: 4px solid transparent;
+    transition: all .3s;
 }
 
 .features__controls hr{
@@ -48,8 +55,10 @@
 
 .feature{
     width: 90%;
-    margin: 60px auto 0 auto;
+    position: absolute;
+    margin: auto;
 }
+
 
 .feature img{
     width: 100%;
@@ -66,4 +75,16 @@
 
 .feature p{
     font-size: .8em;
+}
+
+.featureActive{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+}
+
+.featureUnactive{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 }

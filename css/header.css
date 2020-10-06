@@ -7,7 +7,7 @@ header{
 }
 
 header .logo{
-    z-index: 200;
+    z-index: 300;
     position: absolute;
     margin-left: 10vw;
     margin-top: 5vh;
@@ -17,7 +17,7 @@ header span{
     position: absolute;
     right: 10vw;
     top: 5vh;
-    z-index: 200;
+    z-index: 300;
 }
 
 .header__nav{
@@ -25,10 +25,11 @@ header span{
     background-color:hsla(229, 31%, 21%, 0.980);
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 200;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.2s ease;
 }
 
 nav ul{

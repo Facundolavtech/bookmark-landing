@@ -18,10 +18,10 @@
 
     <header>
         <a href="./" class="logo">
-            <img src="./assets/images/logo-bookmark.svg" alt="">
+            <img id="headerLogo" src="./assets/images/logo-bookmark.svg" alt="">
         </a>
 
-        <nav class="header__nav hidden">
+        <nav id="nav" class="header__nav hidden">
             <ul>
                 <a href="#">FEATURES</a>
                 <a href="#">PRICING</a>
@@ -36,7 +36,7 @@
         </nav>
 
 
-        <span class="btnMenu"><img src="./assets/images/icon-hamburger.svg" alt=""></span>
+        <span id="btnMenu" class="btnMenu"><img id="hamburgerIcon" src="./assets/images/icon-hamburger.svg" alt=""></span>
     </header>
 
     <main>
@@ -62,26 +62,30 @@
             <p>Our aim to make it quick and easy for you to access your favourite websites. Your bookmars sync between your devices so you can access them on the go.</p>
 
             <div class="features__controls">
-                <hr>
-                <button class="active">Simple Bookmarking</button>
-                <hr>
-                <button>Speedy Searching</button>
-                <hr>
-                <button>Easy Sharing</button>
-                <hr>
+                    <hr>
+                    <button class="controlActive" id="1">Simple Bookmarking</button>
+                    <hr>
+                    <button class="controlUnactive" id="2">Speedy Searching</button>
+                    <hr>
+                    <button class="controlUnactive" id="3">Easy Sharing</button>
+                    <hr>
             </div>
 
-            <div class="feature">
-                <img src="./assets/images/illustration-features-tab-1.svg" alt="">
-                <h3>Bookmark in one click</h3>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-            </div>
-            <div class="feature">
-
-            </div>
-            <div class="feature">
-
-            </div>
+                <div class="feature featureActive">
+                    <img src="./assets/images/illustration-features-tab-1.svg" alt="">
+                    <h3>Bookmark in one click</h3>
+                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                </div>
+                <div class="feature featureUnactive">
+                    <img src="./assets/images/illustration-features-tab-2.svg" alt="">
+                    <h3>Intelligent search</h3>
+                    <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                </div>
+                <div class="feature featureUnactive">
+                    <img src="./assets/images/illustration-features-tab-3.svg" alt="">
+                    <h3>Share your bookmarks</h3>
+                    <p>Easily share your bookmarks and collections with others. Create a sheareable link that you can send at the click of a button.</p>
+                </div>
         </section>
 
         <section class="downloads__section">
@@ -167,5 +171,7 @@
         </div>
     </footer>
 
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/features.js"></script>
 </body>
 </html>
