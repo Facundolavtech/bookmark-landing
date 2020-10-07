@@ -18,11 +18,12 @@ header span{
     right: 10vw;
     top: 5vh;
     z-index: 300;
+    cursor: pointer;
 }
 
 .header__nav{
     position: fixed;
-    background-color:hsla(229, 31%, 21%, 0.980);
+    background-color:hsla(229, 31%, 21%, 0.950);
     width: 100%;
     height: 100%;
     z-index: 200;
@@ -50,6 +51,11 @@ nav ul a{
     border-top: 1px solid  hsl(231, 4%, 37%);
 }
 
+nav ul a:hover{
+    transition: color .3s;
+    color: var(--SoftRed);
+}
+
 nav ul a:nth-child(3){
     border-bottom: 1px solid hsl(231, 4%, 37%);
 }
@@ -61,10 +67,18 @@ nav ul a:last-child{
     border: 2px solid #fff;
 }
 
+nav ul a:last-child:hover{
+    transition: all .3s;
+    background-color: #fff;
+    color: var(--SoftRed);
+    border: 2px solid var(--SoftRed);
+}
+
 .nav__social{
-    width: 30%;
+    position: relative;
+    min-width: 100px;
     margin: 0 auto;
-    margin-bottom: 5vh;
+    bottom: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,3 +91,77 @@ nav ul a:last-child{
 }
 
 
+
+@media screen and (min-width: 1024px){
+    header{
+        height: 120px;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    header span{
+        display: none
+    }
+
+    header .logo{
+        z-index: 1;
+        position: static;
+        margin: 0;
+    }
+
+    .header__nav{
+        position: static;
+        width: auto;
+        height: 100%;
+        z-index: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transition: all 0.2s ease;
+        background-color: #fff;
+    }
+
+    nav ul{
+        width: auto;
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    nav ul a{
+        width: auto;
+        margin: 0 20px;
+        text-align: initial;
+        text-decoration: none;
+        color: var(--VeryDarkBlue);
+        letter-spacing: 0;
+        border-top: none;
+        font-weight: 500;
+        font-size: .8em;
+    }
+
+    .hidden{
+        opacity: 1;
+        visibility: visible;
+    }
+
+     nav ul a:nth-child(3){
+        border: none;
+    }
+    
+    nav ul a:last-child{
+        border: 2px solid var(--SoftRed);
+        margin-top: 0;
+        padding: 10px 30px;
+        color: #fff;
+        background-color: var(--SoftRed);
+    }
+
+    .nav__social{
+        display: none;
+    }
+}

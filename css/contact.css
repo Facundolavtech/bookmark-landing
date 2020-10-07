@@ -55,10 +55,43 @@
 .contact__section__container form input:nth-child(2){
     height: 50px;
     border-radius: 5px;
+    cursor: pointer;
     outline: none;
     border: none;
     font-size: .8em;
     background-color: var(--SoftRed);
     color: #fff;
     font-weight: 500;
+}
+
+.contact__section__container form input:nth-child(2):hover{
+    transition: all .2s;
+    color: var(--SoftRed);
+    background-color: #fff;
+}
+
+@media screen and (min-width: 1024px){
+
+    .contact__section{
+        padding: 40px 0;
+    }
+
+    .contact__section__container{
+        width: 30%;
+    }
+
+    .contact__section form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact__section form input:nth-child(1){
+        margin-right: 20px;
+        width: 60%;
+    }
+
+    .contact__section form input:nth-child(2){
+        width: 40%;
+    }
 }

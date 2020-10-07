@@ -24,6 +24,7 @@
     text-align: initial;
     border-bottom: 1px solid rgb(233, 230, 230);
     position: relative;
+    cursor: pointer;
 }
 
 .question h3{
@@ -55,4 +56,25 @@
     margin: auto;
     margin-top: 50px;
     border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.question__btn-moreinfo:hover{
+    transition: all .3s;
+    color: var(--SoftBlue);
+    background-color: #fff;
+    border: 2px solid var(--SoftBlue);
+}
+
+
+@media screen and (min-width: 1024px){
+    .faq__section{
+        margin-top: 250px;
+        width: 60%;
+    }
+
+    .question{
+        width: 50%;
+        margin: auto;
+    }
 }

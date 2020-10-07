@@ -40,21 +40,23 @@
     </header>
 
     <main>
-        <section class="hero__section">
-            <img src="./assets/images/illustration-hero.svg" alt="">   
+        <div class="hero__container">
+            <section class="hero__section">
+                <img src="./assets/images/illustration-hero.svg" alt="">   
 
-            <div class="hero__img-bg"></div>
-        </section>
+                <div class="hero__img-bg"></div>
+            </section>
 
-        <section class="principal-info__section">
-            <h1>A Simple Bookmark Manager</h1>
-            <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free</p>
+            <section class="principal-info__section">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free</p>
 
-            <div class="btn__getIt__container">
-                <a href="#">Get it on Chrome</a>
-                <a href="#">Get it on Firefox</a>
-            </div>
-        </section>
+                <div class="btn__getIt__container">
+                    <a href="#">Get it on Chrome</a>
+                    <a href="#">Get it on Firefox</a>
+                </div>
+            </section>
+        </div>
 
         <section class="features__section">
 
@@ -73,18 +75,27 @@
 
                 <div class="feature featureActive">
                     <img src="./assets/images/illustration-features-tab-1.svg" alt="">
-                    <h3>Bookmark in one click</h3>
-                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <div class="featureInfo">
+                        <h3>Bookmark in one click</h3>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                        <a href="#">More Info</a>
+                    </div>
                 </div>
                 <div class="feature featureUnactive">
                     <img src="./assets/images/illustration-features-tab-2.svg" alt="">
-                    <h3>Intelligent search</h3>
-                    <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                    <div class="featureInfo">
+                        <h3>Intelligent search</h3>
+                        <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                        <a href="#">More Info</a>
+                    </div>
                 </div>
                 <div class="feature featureUnactive">
                     <img src="./assets/images/illustration-features-tab-3.svg" alt="">
-                    <h3>Share your bookmarks</h3>
-                    <p>Easily share your bookmarks and collections with others. Create a sheareable link that you can send at the click of a button.</p>
+                    <div class="featureInfo">
+                        <h3>Share your bookmarks</h3>
+                        <p>Easily share your bookmarks and collections with others. Create a sheareable link that you can send at the click of a button.</p>
+                        <a href="#">More Info</a>
+                    </div>
                 </div>
         </section>
 
@@ -156,17 +167,21 @@
 
     <footer>
         <div class="footer__container">
-            <a href="" class="footer__logo">
-                <img src="./assets/images/logo-bookmarkfooter.svg" alt="">
-            </a>
-            <div class="footer__links">
-                <a href="#">FEATURES</a>
-                <a href="#">PRICING</a>
-                <a href="#">CONTACT</a>
+            <div class="footer__column1">
+                <a href="" class="footer__logo">
+                    <img src="./assets/images/logo-bookmarkfooter.svg" alt="">
+                </a>
+                <div class="footer__links">
+                    <a href="#">FEATURES</a>
+                    <a href="#">PRICING</a>
+                    <a href="#">CONTACT</a>
+                </div>
             </div>
-            <div class="footer__social">
-                <a href="#" class="facebook"></a>
-                <a href="#" class="twitter"></a>
+            <div class="footer__column2">
+                <div class="footer__social">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="twitter"></a>
+                </div>
             </div>
         </div>
     </footer>

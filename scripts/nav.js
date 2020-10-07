@@ -3,9 +3,7 @@ const nav = document.getElementById("nav"),
     logo = document.getElementById("headerLogo"),
     hamburgerIcon = document.getElementById("hamburgerIcon"),
     headerLinks = document.querySelectorAll("a")
-
-
-
+    
 
     function disableScroll(){  
         window.scrollTo("0", "0")
@@ -37,3 +35,5 @@ const nav = document.getElementById("nav"),
             ocultarMenu()
         }
     })
+
+    

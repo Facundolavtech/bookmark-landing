@@ -6,8 +6,6 @@ const featureControl1 = document.getElementById("1"),
 const arrFeatures = [...features]
 const controls = [featureControl1, featureControl2, featureControl3]
 
-console.log(arrFeatures[0])
-
 controls.forEach(e => {
     e.addEventListener("click", (i) => {
         let index = i.target.id
@@ -18,7 +16,6 @@ controls.forEach(e => {
 
         e.classList.replace("controlUnactive", "controlActive")
         
-
         arrFeatures.forEach(e => {
             e.classList.replace("featureActive", "featureUnactive")
         })

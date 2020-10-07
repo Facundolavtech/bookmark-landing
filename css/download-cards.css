@@ -4,7 +4,6 @@
     width: 90%;
     margin: auto;
     text-align: center;
-    margin-top: 550px;
 }
 
 .downloads__section h2{
@@ -19,15 +18,24 @@
     margin-bottom: 50px;
 }
 
+.downloads-cards__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .card{
-    width: 90%;
+    max-width: 350px;
     margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-bottom: 40px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 22px -4px rgba(185, 184, 184, 0.75);
 }
 
 .card a{
@@ -44,6 +52,14 @@
     color: #fff;
     background-color: var(--SoftBlue);
     margin-top: 20px;
+    border: 2px solid transparent;
+}
+
+.card a:hover{
+    transition: all .3s;
+    color: var(--SoftBlue);
+    background-color: #fff;
+    border: 2px solid var(--SoftBlue);
 }
 
 .card h3{
@@ -51,4 +67,41 @@
     margin-bottom: 20px;
     font-size: 1.1em;
     color: var(--VeryDarkBlue);
+}
+
+@media screen and (min-width: 1024px){
+
+    .downloads__section{
+        width: 70%;
+    }
+
+    .downloads__section h2{
+        font-size: 1.8em;
+    }
+
+    .downloads-cards__container{
+        width: 90%;
+        flex-direction: row;
+        margin: 100px auto 150px auto;
+    }
+
+    .card a{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .card{
+        width: 30%;
+        margin: auto;
+    }
+
+    .card:nth-child(2){
+        transform: translateY(10%);
+    }
+
+    .card:nth-child(3){
+        transform: translateY(20%);
+    }
+
 }
