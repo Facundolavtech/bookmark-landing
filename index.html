@@ -63,17 +63,20 @@
             <h2>Features</h2>
             <p>Our aim to make it quick and easy for you to access your favourite websites. Your bookmars sync between your devices so you can access them on the go.</p>
 
-            <div class="features__controls">
+            <div class="features__container">
+                <div class="features__controls">
                     <hr>
-                    <button class="controlActive" id="1">Simple Bookmarking</button>
+                    <input type="radio" name="feature" id="bookmarking" checked></input>
+                    <label for="bookmarking">Simple Bookmarking</label>
                     <hr>
-                    <button class="controlUnactive" id="2">Speedy Searching</button>
+                    <input type="radio" name="feature" id="searching"></input>
+                    <label for="searching">Speedy Searching</label>
                     <hr>
-                    <button class="controlUnactive" id="3">Easy Sharing</button>
+                    <input type="radio" name="feature" id="sharing"></input>
+                    <label for="sharing">Easy Sharing</label>
                     <hr>
-            </div>
-
-                <div class="feature featureActive">
+                </div>
+                <div class="feature" id="feature-bookmarking">
                     <img src="./assets/images/illustration-features-tab-1.svg" alt="">
                     <div class="featureInfo">
                         <h3>Bookmark in one click</h3>
@@ -81,7 +84,7 @@
                         <a href="#">More Info</a>
                     </div>
                 </div>
-                <div class="feature featureUnactive">
+                <div class="feature" id="feature-searching">
                     <img src="./assets/images/illustration-features-tab-2.svg" alt="">
                     <div class="featureInfo">
                         <h3>Intelligent search</h3>
@@ -89,7 +92,7 @@
                         <a href="#">More Info</a>
                     </div>
                 </div>
-                <div class="feature featureUnactive">
+                <div class="feature" id="feature-sharing">
                     <img src="./assets/images/illustration-features-tab-3.svg" alt="">
                     <div class="featureInfo">
                         <h3>Share your bookmarks</h3>
@@ -97,6 +100,9 @@
                         <a href="#">More Info</a>
                     </div>
                 </div>
+            </div>
+
+              
         </section>
 
         <section class="downloads__section">
@@ -187,6 +193,5 @@
     </footer>
 
     <script src="./scripts/nav.js"></script>
-    <script src="./scripts/features.js"></script>
 </body>
 </html>
